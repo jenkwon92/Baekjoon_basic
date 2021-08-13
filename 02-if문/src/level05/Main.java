@@ -21,12 +21,11 @@ public class Main {
 		int H = sc.nextInt();
 		int M = sc.nextInt();
 		
-		if(M-45>0) {
-			System.out.println(H M);
+		if(M>=0 && M<60) {
+			if(M-45<0) {
+				M = (M-45)*(-1);
+			}
+			System.out.println(M);
 		}
-		
-		
-		
-		
 	}
 }

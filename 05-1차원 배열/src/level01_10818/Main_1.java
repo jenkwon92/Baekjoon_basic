@@ -41,36 +41,33 @@ public class Main_1 {
 	 */
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = null;
-		BufferedWriter bw = null;
+	
 		int[] list;
 
 		br = new BufferedReader(new InputStreamReader(System.in));
-		bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
 
 		int N = (Integer.parseInt(br.readLine()));
 		list = new int[N];
 
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
+		for (int i = 0; i < N; i++) {
+			list[i] = (Integer.parseInt(st.nextToken()));
+		}
+
+		int min = list[0];
+		int max = list[0];
+
+		for (int i = 0; i < list.length; i++) {
+			if (min > list[i])
+				min = list[i];
+			if (max < list[i])
+				max = list[i];
+		}
+		System.out.println(min + " " + max);
+
 		
-			for (int i = 0; i < N; i++) {
-				list[i] = (Integer.parseInt(st.nextToken()));
-			}
-
-			int min = list[0];
-			int max = list[0];
-
-			for (int i = 0; i < list.length; i++) {
-				if (min > list[i])
-					min = list[i];
-				if (max < list[i])
-					max = list[i];
-			}
-			System.out.println(min + " " + max);
-		
-
-		if (bw != null)
-			bw.close();
 		if (br != null)
 			br.close();
 

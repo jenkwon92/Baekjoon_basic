@@ -17,15 +17,23 @@ public class Main {
 		현재 상근이가 설정한 알람 시각이 주어졌을 때, 창영이의 방법을 사용한다면, 
 		이를 언제로 고쳐야 하는지 구하는 프로그램을 작성하시오.
 		*/
+		
 		Scanner sc = new Scanner(System.in);
+		
 		int H = sc.nextInt();
 		int M = sc.nextInt();
 		
-		if(M>=0 && M<60) {
-			if(M-45<0) {
-				M = (M-45)*(-1);
+		if(M<45) {
+			H=H-1;
+			M = M+15;
+			if(H<0) {
+				H =23;
 			}
-			System.out.println(M);
+			System.out.println(H+" "+	 M);
+		}else {
+			System.out.println(H+" "+(M-45));
 		}
+		
+		sc.close();
 	}
 }

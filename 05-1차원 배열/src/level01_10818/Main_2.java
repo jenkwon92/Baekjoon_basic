@@ -41,7 +41,7 @@ public class Main_2 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		//int N = br.read(); //readLine과 read의 차이점?
-		int N = Integer.parseInt(br.readLine()); //readLine과 read의 차이점?
+		int N = Integer.parseInt(br.readLine()); //readLine과 read의 차이점? 5
 		
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 		
@@ -52,8 +52,8 @@ public class Main_2 {
 		
 		Arrays.sort(array);
 		
-		System.out.println(array[0] + " "+ array[N-1]);
+		System.out.println("최소: "+array[0] + " "+ "최대 : " +array[N-1]);
 		
-		br.close();
+		br.close(); 
 	}
 }

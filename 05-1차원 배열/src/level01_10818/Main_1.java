@@ -36,8 +36,9 @@ public class Main_1 {
 	 * 떨어지면, n을 출력하고 알고리즘을 종료한다. 4. 그렇지 않으면, m을 n으로 나눈 나머지를 새롭게 m에 대입하고, m과 n을 바꾸고
 	 * 3번으로 돌아온다.
 	 * 
-	 * public static int gcd(int p, int q) { if (q == 0) return p; return gcd(q,
-	 * p%q); }
+	 * public static int gcd(int p, int q) { 
+	 * if (q == 0) return p; 
+	 * return gcd(q,p%q); }
 	 */
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = null;

@@ -1,4 +1,4 @@
-package level02;
+package level02_10950;
 
 import java.util.Scanner;
 

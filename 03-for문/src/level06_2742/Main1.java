@@ -1,4 +1,4 @@
-package level06;
+package level06_2742;
 
 import java.util.Scanner;
 
